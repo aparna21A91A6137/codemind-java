@@ -1,20 +1,24 @@
 import java.util.Scanner;
-class Pretty
+class Pattern
 {
     public static void main(String args[])
     {
-        int t,i,j;
         Scanner sc=new Scanner(System.in);
-        t=sc.nextInt();
-        for(i=1;i<=t;i++)
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++)
         {
-            for(j=t;j>=1;j--)
+            for(int j=0;j<n;j++)
             {
-                System.out.print(j+" ");
+                if(i==j)
+                {
+                    System.out.print("0");
+                }
+                else
+                {
+                    System.out.print("x");
+                }
             }
             System.out.println();
         }
-        sc.close();
-        
     }
 }
