@@ -7,7 +7,7 @@ class Tables
         int n=sc.nextInt();
         int sum=0,r;
         while(sum!=1&&sum!=4)
-        {
+    {
         sum=0;
         while(n>0)
         {
@@ -16,14 +16,14 @@ class Tables
             n=n/10;
         }
         n=sum;
-        }
-        if(sum==1)
-        {
+    }
+    if(sum==1)
+    {
         System.out.print("True");
-        }
-        else
-        {
+    }
+    else
+    {
         System.out.print("False");
-        }
+    }
     }
 }
