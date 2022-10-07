@@ -1,12 +1,11 @@
 import java.util.Scanner;
-import java.lang.Math;
-class palindrome
+class Wave
 {
     public static void main(String args[])
     {
-        int n,count=0;
+        int y=0;
         Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
+        int n=sc.nextInt();
         int[] arr=new int[n];
         for(int i=0;i<n;i++)
         {
@@ -16,14 +15,17 @@ class palindrome
         {
             if(arr[i]>=arr[i+1])
             {
-                count=1;
+                y=1;
                 break;
             }
         }
-        if(count==0)
-        System.out.println("yes");
+        if(y==0)
+        {
+            System.out.print("yes");
+        }
         else
-        System.out.println("no");
-        sc.close();
+        {
+            System.out.print("no");
+        }
     }
 }
