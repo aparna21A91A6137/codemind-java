@@ -5,11 +5,18 @@ class Pattern
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        for(int i=1;i<=n;i++)
+        for(int i=n;i>=1;i--)
         {
-            for(int j=i;j<=n;j++)
+            for(int j=n;j>=1;j--)
             {
-                System.out.print(j+" ");
+                if(i==j||j==(n-i+1))
+                {
+                    System.out.print(i+" ");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
